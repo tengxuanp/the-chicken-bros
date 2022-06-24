@@ -1,0 +1,63 @@
+.about__wrapper {
+    background-color: #FFFBEB;
+    opacity: 1;
+    background-size: 20px 20px;
+    background-image:  repeating-linear-gradient(to right, #ece6cf, #ece6cf 1px, #FFFBEB 1px, #FFFBEB);
+    .banner{
+        background-image: url(../../assets/banner.svg);
+        background-repeat: repeat-x;
+
+    }
+
+    .marquee {
+        span+span {
+            margin-left:20rem;
+        }
+    }
+
+    .about__title {
+        white-space: nowrap;
+        grid-area: i;
+        color: white;
+        text-shadow:
+        0 0 5px red,
+        0 0 10px red,
+        0 0 20px red;
+
+        span {
+        animation: flicker 5000ms infinite;
+        }
+
+        .delay {
+            animation-delay: 0.7s;
+        }
+    }
+
+    .potrait {
+        box-shadow:
+        0 0 5px red,
+        0 0 10px rgb(255, 255, 255),
+        0 0 20px red;
+    }
+
+    .cite {
+        text-shadow:
+        0 0 5px red,
+        0 0 10px red,
+        0 0 20px red;
+    }
+    
+}
+
+@keyframes flicker{
+    0% {opacity: 0;}
+    3% {opacity: 1;}
+    5% {opacity: 0;}
+    10% {opacity: 1;}
+    13% {opacity: 0;}
+    15% {opacity: 1;}
+    20% {opacity: 0;}
+    25% {opacity: 1;}
+    100% {opacity: 1;}
+
+}

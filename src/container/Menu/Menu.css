@@ -1,0 +1,68 @@
+.menu__bg {
+  background-color: #000000;
+  opacity: 1;
+  background: linear-gradient(135deg, #f91e1e55 25%, transparent 25%) -10px 0/20px 20px, linear-gradient(225deg, #f91e1e 25%, transparent 25%) -10px 0/20px 20px, linear-gradient(315deg, #f91e1e55 25%, transparent 25%) 0px 0/20px 20px, linear-gradient(45deg, #f91e1e 25%, #000000 25%) 0px 0/20px 20px;
+}
+
+.menu__bg .menu__table li {
+  margin: 2rem 0;
+  -webkit-animation: rainbow 5000ms infinite;
+          animation: rainbow 5000ms infinite;
+}
+
+.menu__bg .menu__table .delay1 {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+.menu__bg .menu__table .delay2 {
+  -webkit-animation-delay: 1.6s;
+          animation-delay: 1.6s;
+}
+
+@-webkit-keyframes rainbow {
+  0% {
+    -webkit-box-shadow: 0 0 5px white, 0 0 10px white, 0 0 20px white;
+            box-shadow: 0 0 5px white, 0 0 10px white, 0 0 20px white;
+  }
+  25% {
+    -webkit-box-shadow: 0 0 5px red, 0 0 10px white, 0 0 20px #ff00ea;
+            box-shadow: 0 0 5px red, 0 0 10px white, 0 0 20px #ff00ea;
+  }
+  50% {
+    -webkit-box-shadow: 0 0 5px yellow, 0 0 10px white, 0 0 20px yellow;
+            box-shadow: 0 0 5px yellow, 0 0 10px white, 0 0 20px yellow;
+  }
+  75% {
+    -webkit-box-shadow: 0 0 5px #00ffb3, 0 0 10px white, 0 0 20px #00ffb3, 0 0 40px #00ffb3;
+            box-shadow: 0 0 5px #00ffb3, 0 0 10px white, 0 0 20px #00ffb3, 0 0 40px #00ffb3;
+  }
+  100% {
+    -webkit-box-shadow: 0 0 5px purple, 0 0 10px white, 0 0 20px white;
+            box-shadow: 0 0 5px purple, 0 0 10px white, 0 0 20px white;
+  }
+}
+
+@keyframes rainbow {
+  0% {
+    -webkit-box-shadow: 0 0 5px white, 0 0 10px white, 0 0 20px white;
+            box-shadow: 0 0 5px white, 0 0 10px white, 0 0 20px white;
+  }
+  25% {
+    -webkit-box-shadow: 0 0 5px red, 0 0 10px white, 0 0 20px #ff00ea;
+            box-shadow: 0 0 5px red, 0 0 10px white, 0 0 20px #ff00ea;
+  }
+  50% {
+    -webkit-box-shadow: 0 0 5px yellow, 0 0 10px white, 0 0 20px yellow;
+            box-shadow: 0 0 5px yellow, 0 0 10px white, 0 0 20px yellow;
+  }
+  75% {
+    -webkit-box-shadow: 0 0 5px #00ffb3, 0 0 10px white, 0 0 20px #00ffb3, 0 0 40px #00ffb3;
+            box-shadow: 0 0 5px #00ffb3, 0 0 10px white, 0 0 20px #00ffb3, 0 0 40px #00ffb3;
+  }
+  100% {
+    -webkit-box-shadow: 0 0 5px purple, 0 0 10px white, 0 0 20px white;
+            box-shadow: 0 0 5px purple, 0 0 10px white, 0 0 20px white;
+  }
+}
+/*# sourceMappingURL=Menu.css.map */

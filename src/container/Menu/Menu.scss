@@ -1,0 +1,58 @@
+.menu__bg {
+    background-color: #000000;
+    opacity: 1;
+    background: linear-gradient(135deg, #f91e1e55 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(225deg, #f91e1e 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(315deg, #f91e1e55 25%, transparent 25%) 0px 0/ 20px 20px, linear-gradient(45deg, #f91e1e 25%, #000000 25%) 0px 0/ 20px 20px;
+
+    .menu__table {
+
+        li {
+        margin: 2rem 0;
+
+        animation: rainbow 5000ms infinite;
+        }
+
+        .delay1{
+            animation-delay: 0.8s;
+        }
+        .delay2{
+            animation-delay: 1.6s;
+        }
+
+    }
+
+}
+
+@keyframes rainbow {
+
+    0%{ box-shadow:
+        0 0 5px rgb(255, 255, 255),
+        0 0 10px rgb(255, 255, 255),
+        0 0 20px rgb(255, 255, 255)
+        ;}
+    
+    25%{ box-shadow:
+        0 0 5px red,
+        0 0 10px rgb(255, 255, 255),
+        0 0 20px rgb(255, 0, 234)
+        ;}    
+
+    50%{ box-shadow:
+        0 0 5px yellow,
+        0 0 10px rgb(255, 255, 255),
+        0 0 20px yellow
+        ;}
+
+    75%{ box-shadow:
+        0 0 5px rgb(0, 255, 179),
+        0 0 10px rgb(255, 255, 255),
+        0 0 20px rgb(0, 255, 179),
+        0 0 40px rgb(0, 255, 179),
+        ;}
+
+    100%{ box-shadow:
+        0 0 5px purple,
+        0 0 10px rgb(255, 255, 255),
+        0 0 20px rgb(255, 255, 255)
+        ;}
+
+}

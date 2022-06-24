@@ -1,0 +1,144 @@
+// body{
+//     background-image:linear-gradient(to bottom, hsl(144, 100%, 74%), hsl(324, 67%, 64%));
+// }
+
+.app__header{
+
+    height: 100vh;
+
+    h1{
+        color: gold;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+    }
+
+    .app__wrapper-img {
+        display: grid;
+        gap: 0;
+        grid-template-columns: repeat(8, 2fr);
+        grid-auto-rows: minmax(100px, auto);
+        grid-template-areas:
+          "a a a b b b b b"
+          "a a a . . d d d"
+          "a a a j j d d d"
+          "a a a j j . e e"
+          "f f f f g g h h"
+          ". . i i i i h h";
+      }
+        .milktea {
+            grid-area: a;
+        }
+        
+        .drumstick {
+            grid-area: b;
+            justify-self: end;
+        }
+
+        .ice {
+            grid-area: d;
+        }
+
+        .tea {
+            grid-area: e;
+            justify-self: start;
+        }
+
+        .side {
+            grid-area: f;
+        }
+
+        .rice {
+            grid-area: g;
+        }
+
+        .set {
+            grid-area: h;
+        }
+
+        .time {
+            white-space: nowrap;
+            grid-area: i;
+            color: white;
+            text-shadow:
+            0 0 5px #fff,
+            0 0 10px #fff,
+            0 0 20px #fff,
+            0 0 40px #fff,
+            0 0 80px #fff,
+            0 0 90px #fff,
+            0 0 100px #fff;
+            
+            span{
+                animation: flicker 5000ms infinite;
+                // animation-iteration-count: infinite;
+            }
+
+            .word1{
+                &:before {
+                    content: '10.00';
+                    animation: wording1 5000ms infinite;
+                    animation-delay: 1.4s;
+                }     
+            }
+
+            .word2{
+                &:before {
+                    content: '10.0';
+                    animation: wording2 5000ms infinite;
+                    animation-delay: 1.8s;
+                }     
+            }
+
+            .delay1{
+                animation-delay: 0.8s;
+            }
+            .delay2{
+                animation-delay: 1.4s;
+            }
+            .delay3{
+                animation-delay: 3s;
+            }
+        }
+
+
+        .logo {
+            grid-area: j;
+        }
+
+    }
+
+@keyframes flicker{
+    0% {opacity: 0;}
+    3% {opacity: 1;}
+    5% {opacity: 0;}
+    10% {opacity: 1;}
+    13% {opacity: 0;}
+    15% {opacity: 1;}
+    20% {opacity: 0;}
+    25% {opacity: 1;}
+
+    // 5% {opacity: 1;}
+    // 10% {opacity: 0;}
+    // 20% {opacity: 1;}
+    // 25% {opacity: 0;}
+    // 30% {opacity: 1;}
+    // 40% {opacity: 0;}
+    // 50% {opacity: 1;}    
+    100% {opacity: 1;}
+
+}
+
+@keyframes wording1{
+    0% {content: "66.66";}
+    10% {content: "10.00";}
+    15% {content: "66.66";}
+    18% {content: "10.00";}
+    100% {content: "10.00";}
+}
+
+@keyframes wording2{
+    69% {content: "66.6";}
+    70% {content: "10.0";}
+}
+
+
