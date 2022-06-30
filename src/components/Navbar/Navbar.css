@@ -1,5 +1,4 @@
 .app__navbar {
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11,6 +10,8 @@
           align-items: center;
   background-color: #FFFBEB;
   padding: 1rem 0;
+  -webkit-box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+          box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }
 
 .app__navbar .app__navbar-links {
@@ -35,7 +36,10 @@
 }
 
 .app__navbar .app__navbar-links li:hover {
-  background-color: yellow;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+  border-top: 0.25rem solid #F11A3E;
+  border-bottom: 0.25rem solid #F11A3E;
 }
 
 .app__navbar-smallscreen {
@@ -45,12 +49,14 @@
 .app__navbar-smallscreen .app_navbar-smallscreen_overlay {
   position: fixed;
   top: 0;
-  left: 0;
-  width: 100%;
+  right: 0;
+  width: 80%;
   height: 100vh;
-  background-color: black;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
+  background-color: rgba(48, 33, 33, 0.76);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -60,7 +66,7 @@
 
 .app__navbar-smallscreen .app_navbar-smallscreen_overlay .overlay__close {
   font-size: 27px;
-  color: gold;
+  color: red;
   cursor: pointer;
   position: absolute;
   top: 20px;
@@ -74,7 +80,7 @@
 .app__navbar-smallscreen .app_navbar-smallscreen_overlay .app__navbar-smallscreen-links li {
   margin: 2rem;
   cursor: pointer;
-  color: gold;
+  color: red;
   font-size: 2rem;
 }
 

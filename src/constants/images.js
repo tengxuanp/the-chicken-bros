@@ -1,4 +1,3 @@
-import cutlery from '../assets/cutlery.png'
 import logo from '../assets/logo.png'
 import Hdrumstick from '../assets/drumstick.png'
 import Hice from '../assets/ice.png'
@@ -14,11 +13,23 @@ import Achef from '../assets/chef.jpg'
 import Mbg from '../assets/menuBg.jpg'
 import Mdrumstick1 from '../assets/drumstick1.png'
 import Mdrumstick2 from '../assets/drumstick2.png'
-
+import Mmilktea1 from '../assets/milktea1.gif'
+import Mchat from '../assets/chat.png'
+import Farrow from '../assets/icon-arrow-down.svg'
+import Fflood from '../assets/milkteaFlood.png'
+import Fwalk from '../assets/chickenWalking.gif'
+import Ftv1 from'../assets/tv1.png'
+import Ftvlogo from '../assets/tvLogo.gif'
+import Cnugget from '../assets/nugget.png'
+import Cdrumstick3 from '../assets/drumstick3.png'
+import Cpile from '../assets/nugget-pile.png'
+import Cportfolio from '../assets/portfolio.png'
+import Cgithub from '../assets/github.png'
+import Cemail from '../assets/email.png'
 
 export default {
     Nlogo,
-
+    
     Hdrumstick,
     Hice,
     Hmilktea,
@@ -34,7 +45,21 @@ export default {
     Mbg,
     Mdrumstick1,
     Mdrumstick2,
+    Mmilktea1,
+    Mchat,
+
+    Farrow,
+    Fflood,
+    Fwalk,
+    Ftv1,
+    Ftvlogo,
+
+    Cnugget,
+    Cdrumstick3,
+    Cpile,
+    Cportfolio,
+    Cgithub,
+    Cemail,
 
     logo,
-    cutlery,
 };

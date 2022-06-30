@@ -5,11 +5,11 @@ import './About.css';
 const About = () => {
 
   return (
-    <div className='about__wrapper pb-5 bg-cbBg h-auto w-full' >
+    <div name='about' className='about__wrapper pb-5 bg-cbBg h-auto w-full' >
         <div className='banner flex h-24 max-h-24 bg-black' />
-        <div className='marquee bg-cbRed text-orange-300 whitespace-nowrap '>
-            <div className='text-2xl pl-[100%] inline-block animate-marquee1 lg:animate-marquee2'>
-                <span>生意興隆</span><span>客似雲來</span><span>賓客滿門</span>
+        <div className='marquee bg-cbRed text-orange-300 whitespace-nowrap overflow-hidden	'>
+            <div className='w-full text-2xl inline-block pl-[100%] animate-marquee1 lg:animate-marquee2'>
+                <div className='flex'><div className='mx-[5rem]'>生意興隆</div><div className='mx-[5rem]'>客似雲來</div><div className='mx-[5rem]'>賓客滿門</div></div>
             </div>
         </div>
 

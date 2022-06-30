@@ -1,13 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+@font-face {
+  font-family: "monotype";
+  src: url("../../assets/fonts/MTCORSVA.TTF");
+}
+
 .menu__bg {
   background-color: #000000;
   opacity: 1;
   background: linear-gradient(135deg, #f91e1e55 25%, transparent 25%) -10px 0/20px 20px, linear-gradient(225deg, #f91e1e 25%, transparent 25%) -10px 0/20px 20px, linear-gradient(315deg, #f91e1e55 25%, transparent 25%) 0px 0/20px 20px, linear-gradient(45deg, #f91e1e 25%, #000000 25%) 0px 0/20px 20px;
 }
 
+.menu__bg .tbc {
+  font-family: monotype;
+  color: #F11A3E;
+}
+
+.menu__bg .title {
+  text-shadow: 0 0 5px red, 0 0 10px red, 0 0 20px red;
+}
+
 .menu__bg .menu__table li {
   margin: 2rem 0;
   -webkit-animation: rainbow 5000ms infinite;
           animation: rainbow 5000ms infinite;
+  background-color: white;
+  cursor: pointer;
+}
+
+.menu__bg .menu__table li:after {
+  content: 'We currently do not have online ordering available. Please reach the counter for assistance.';
+  display: block;
+  position: absolute;
+  background-color: #3d3d3d;
+  color: white;
+  padding: 1em 3em;
+  border-radius: 1rem;
+  font-size: .75em;
+  left: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: bottom ease-out 150ms, -webkit-transform ease-out 150ms;
+  transition: bottom ease-out 150ms, -webkit-transform ease-out 150ms;
+  transition: transform ease-out 150ms, bottom ease-out 150ms;
+  transition: transform ease-out 150ms, bottom ease-out 150ms, -webkit-transform ease-out 150ms;
+  z-index: 90;
+}
+
+.menu__bg .menu__table li:hover:after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.menu__bg .menu__table li:hover {
+  -webkit-animation: rainbowHover 500ms infinite;
+          animation: rainbowHover 500ms infinite;
+  bottom: 100%;
 }
 
 .menu__bg .menu__table .delay1 {
@@ -18,6 +65,67 @@
 .menu__bg .menu__table .delay2 {
   -webkit-animation-delay: 1.6s;
           animation-delay: 1.6s;
+}
+
+.menu__bg .menu__chickenProperty .prop1 {
+  font-family: 'Staatliches', cursive;
+  color: #e6cc39;
+  -webkit-animation: glowYellow 2000ms infinite;
+          animation: glowYellow 2000ms infinite;
+}
+
+.menu__bg .menu__chickenProperty .prop2 {
+  font-family: 'Staatliches', cursive;
+  color: #228DFF;
+  -webkit-animation: glowBlue 2000ms infinite;
+          animation: glowBlue 2000ms infinite;
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+}
+
+.menu__bg .menu__chickenProperty .prop__off {
+  font-family: 'Staatliches', cursive;
+  color: #3d3d3d;
+  opacity: .2;
+}
+
+.menu__bg .hypnosis1 {
+  -webkit-animation: hypno 2000ms infinite;
+          animation: hypno 2000ms infinite;
+}
+
+.menu__bg .hypnosis2 {
+  -webkit-animation: hypno 2000ms infinite;
+          animation: hypno 2000ms infinite;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.menu__bg .hypnosis3 {
+  -webkit-animation: hypno 2000ms infinite;
+          animation: hypno 2000ms infinite;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.menu__bg .hypnosis4 {
+  -webkit-animation: hypno 2000ms infinite;
+          animation: hypno 2000ms infinite;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
+.menu__bg .chat:after {
+  content: 'This is an important message for customers who have \A recently purchased The Chicken Bros Boba Tea\002E \A Some customers have confused The Chicken Bros Boba Tea \A with Boba Tea\002E \A Please return this product to The Chicken Bros immediately\002E \A \A For your safety, this product will be carefully disposed of\002E \A \A Or for assistance please call\003A  011-10696958';
+  display: block;
+  white-space: pre;
+  text-align: left;
+  position: absolute;
+  background-color: white;
+  color: black;
+  padding: 1em 3em 1em 2em;
+  border-radius: 1rem;
+  font-size: .75em;
 }
 
 @-webkit-keyframes rainbow {
@@ -34,8 +142,8 @@
             box-shadow: 0 0 5px yellow, 0 0 10px white, 0 0 20px yellow;
   }
   75% {
-    -webkit-box-shadow: 0 0 5px #00ffb3, 0 0 10px white, 0 0 20px #00ffb3, 0 0 40px #00ffb3;
-            box-shadow: 0 0 5px #00ffb3, 0 0 10px white, 0 0 20px #00ffb3, 0 0 40px #00ffb3;
+    -webkit-box-shadow: 0 0 5px #00ffb3, 0 0 10px white, 0 0 20px #00ffb3;
+            box-shadow: 0 0 5px #00ffb3, 0 0 10px white, 0 0 20px #00ffb3;
   }
   100% {
     -webkit-box-shadow: 0 0 5px purple, 0 0 10px white, 0 0 20px white;
@@ -57,12 +165,140 @@
             box-shadow: 0 0 5px yellow, 0 0 10px white, 0 0 20px yellow;
   }
   75% {
-    -webkit-box-shadow: 0 0 5px #00ffb3, 0 0 10px white, 0 0 20px #00ffb3, 0 0 40px #00ffb3;
-            box-shadow: 0 0 5px #00ffb3, 0 0 10px white, 0 0 20px #00ffb3, 0 0 40px #00ffb3;
+    -webkit-box-shadow: 0 0 5px #00ffb3, 0 0 10px white, 0 0 20px #00ffb3;
+            box-shadow: 0 0 5px #00ffb3, 0 0 10px white, 0 0 20px #00ffb3;
   }
   100% {
     -webkit-box-shadow: 0 0 5px purple, 0 0 10px white, 0 0 20px white;
             box-shadow: 0 0 5px purple, 0 0 10px white, 0 0 20px white;
+  }
+}
+
+@-webkit-keyframes rainbowHover {
+  0% {
+    -webkit-box-shadow: 0 0 5px white, 0 0 10px white, 0 0 40px white;
+            box-shadow: 0 0 5px white, 0 0 10px white, 0 0 40px white;
+  }
+  25% {
+    -webkit-box-shadow: 0 0 5px red, 0 0 10px white, 0 0 40px #ff00ea;
+            box-shadow: 0 0 5px red, 0 0 10px white, 0 0 40px #ff00ea;
+  }
+  50% {
+    -webkit-box-shadow: 0 0 5px yellow, 0 0 10px white, 0 0 40px yellow;
+            box-shadow: 0 0 5px yellow, 0 0 10px white, 0 0 40px yellow;
+  }
+  75% {
+    -webkit-box-shadow: 0 0 5px #00ffb3, 0 0 10px white, 0 0 40px #00ffb3;
+            box-shadow: 0 0 5px #00ffb3, 0 0 10px white, 0 0 40px #00ffb3;
+  }
+  100% {
+    -webkit-box-shadow: 0 0 5px purple, 0 0 10px white, 0 0 40px white;
+            box-shadow: 0 0 5px purple, 0 0 10px white, 0 0 40px white;
+  }
+}
+
+@keyframes rainbowHover {
+  0% {
+    -webkit-box-shadow: 0 0 5px white, 0 0 10px white, 0 0 40px white;
+            box-shadow: 0 0 5px white, 0 0 10px white, 0 0 40px white;
+  }
+  25% {
+    -webkit-box-shadow: 0 0 5px red, 0 0 10px white, 0 0 40px #ff00ea;
+            box-shadow: 0 0 5px red, 0 0 10px white, 0 0 40px #ff00ea;
+  }
+  50% {
+    -webkit-box-shadow: 0 0 5px yellow, 0 0 10px white, 0 0 40px yellow;
+            box-shadow: 0 0 5px yellow, 0 0 10px white, 0 0 40px yellow;
+  }
+  75% {
+    -webkit-box-shadow: 0 0 5px #00ffb3, 0 0 10px white, 0 0 40px #00ffb3;
+            box-shadow: 0 0 5px #00ffb3, 0 0 10px white, 0 0 40px #00ffb3;
+  }
+  100% {
+    -webkit-box-shadow: 0 0 5px purple, 0 0 10px white, 0 0 40px white;
+            box-shadow: 0 0 5px purple, 0 0 10px white, 0 0 40px white;
+  }
+}
+
+@-webkit-keyframes glowYellow {
+  49% {
+    text-shadow: none;
+    color: #e6cc39;
+  }
+  50% {
+    text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white, 0 0 20px #e6cc39, 0 0 35px #e6cc39, 0 0 40px #e6cc39, 0 0 50px #e6cc39;
+    color: white;
+  }
+  100% {
+    text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white, 0 0 20px #e6cc39, 0 0 35px #e6cc39, 0 0 40px #e6cc39, 0 0 50px #e6cc39;
+    color: white;
+  }
+}
+
+@keyframes glowYellow {
+  49% {
+    text-shadow: none;
+    color: #e6cc39;
+  }
+  50% {
+    text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white, 0 0 20px #e6cc39, 0 0 35px #e6cc39, 0 0 40px #e6cc39, 0 0 50px #e6cc39;
+    color: white;
+  }
+  100% {
+    text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white, 0 0 20px #e6cc39, 0 0 35px #e6cc39, 0 0 40px #e6cc39, 0 0 50px #e6cc39;
+    color: white;
+  }
+}
+
+@-webkit-keyframes glowBlue {
+  49% {
+    text-shadow: none;
+    color: #228DFF;
+  }
+  50% {
+    text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white, 0 0 20px #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF;
+    color: white;
+  }
+  100% {
+    text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white, 0 0 20px #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF;
+    color: white;
+  }
+}
+
+@keyframes glowBlue {
+  49% {
+    text-shadow: none;
+    color: #228DFF;
+  }
+  50% {
+    text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white, 0 0 20px #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF;
+    color: white;
+  }
+  100% {
+    text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white, 0 0 20px #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF;
+    color: white;
+  }
+}
+
+@-webkit-keyframes hypno {
+  from {
+    -webkit-transform: scale(0.1);
+            transform: scale(0.1);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes hypno {
+  from {
+    -webkit-transform: scale(0.1);
+            transform: scale(0.1);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 /*# sourceMappingURL=Menu.css.map */

@@ -75,6 +75,7 @@
 }
 
 .app__header .time {
+  font-family: digi;
   white-space: nowrap;
   -ms-grid-row: 6;
   -ms-grid-column: 3;

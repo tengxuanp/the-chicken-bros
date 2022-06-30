@@ -1,14 +1,64 @@
+@font-face {
+    font-family: "monotype";
+    src: url("../../assets/fonts/MTCORSVA.TTF");
+}
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+$mYellow:#e6cc39;
+$mBlue:#228DFF;
+$mGray:rgb(61, 61, 61);
+
 .menu__bg {
     background-color: #000000;
     opacity: 1;
     background: linear-gradient(135deg, #f91e1e55 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(225deg, #f91e1e 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(315deg, #f91e1e55 25%, transparent 25%) 0px 0/ 20px 20px, linear-gradient(45deg, #f91e1e 25%, #000000 25%) 0px 0/ 20px 20px;
 
+    .tbc {
+        font-family: monotype;
+        color:#F11A3E;
+    }
+
+    .title{
+        text-shadow:
+        0 0 5px red,
+        0 0 10px red,
+        0 0 20px red;
+    }
+
+
     .menu__table {
 
         li {
         margin: 2rem 0;
-
         animation: rainbow 5000ms infinite;
+        background-color: white;
+        cursor: pointer;
+
+        &:after{
+            content:'We currently do not have online ordering available. Please reach the counter for assistance.';
+            display: block;
+            position: absolute;
+            background-color: $mGray;
+            color: white;
+            padding: 1em 3em;
+            border-radius: 1rem;
+            font-size: .75em;
+            left:0;
+            transform: scale(0);
+            transition: 
+                transform ease-out 150ms,
+                bottom ease-out 150ms;
+            z-index: 90;
+            }
+
+        &:hover:after{
+            transform: scale(1);
+        }
+
+        &:hover{
+            animation: rainbowHover 500ms infinite;
+            bottom: 100%;
+        }
+
         }
 
         .delay1{
@@ -20,7 +70,67 @@
 
     }
 
+    .menu__chickenProperty {
+        .prop1 {
+            font-family: 'Staatliches', cursive;
+            color:$mYellow;
+            animation: glowYellow 2000ms infinite;
+        }
+
+        .prop2 {
+            font-family: 'Staatliches', cursive;
+            color:$mBlue;
+            animation: glowBlue 2000ms infinite;
+            animation-delay: 1.2s;
+        }
+
+        .prop__off {
+            font-family: 'Staatliches', cursive;
+            color:$mGray;            
+            opacity: .2;
+        }
+    }
+
+    .hypnosis1 {
+        animation: hypno 2000ms infinite;
+    }
+    .hypnosis2 {
+        animation: hypno 2000ms infinite;
+        animation-delay: 0.5s;
+    }
+    .hypnosis3 {
+        animation: hypno 2000ms infinite;
+        animation-delay: 1s;
+    }
+    .hypnosis4 {
+        animation: hypno 2000ms infinite;
+        animation-delay: 1.5s;
+    }
+
+    .chat {
+
+        &:after{
+            content: 
+            'This is an important message for customers who have \A recently purchased The Chicken Bros Boba Tea\002E \A
+            Some customers have confused The Chicken Bros Boba Tea \A with Boba Tea\002E \A
+            Please return this product to The Chicken Bros immediately\002E \A \A
+            For your safety, this product will be carefully disposed of\002E \A \A
+            Or for assistance please call\003A  011-10696958';
+            
+            display: block;
+            white-space: pre;
+            text-align: left;
+            position: absolute;
+            background-color: white;
+            color: black;
+            padding: 1em 3em 1em 2em;
+            border-radius: 1rem;
+            font-size: .75em;
+        }
+    }
+
 }
+
 
 @keyframes rainbow {
 
@@ -45,8 +155,7 @@
     75%{ box-shadow:
         0 0 5px rgb(0, 255, 179),
         0 0 10px rgb(255, 255, 255),
-        0 0 20px rgb(0, 255, 179),
-        0 0 40px rgb(0, 255, 179),
+        0 0 20px rgb(0, 255, 179)
         ;}
 
     100%{ box-shadow:
@@ -55,4 +164,109 @@
         0 0 20px rgb(255, 255, 255)
         ;}
 
+}
+
+@keyframes rainbowHover{
+
+    0%{ box-shadow:
+        0 0 5px rgb(255, 255, 255),
+        0 0 10px rgb(255, 255, 255),
+        0 0 40px rgb(255, 255, 255)
+        ;}
+    
+    25%{ box-shadow:
+        0 0 5px red,
+        0 0 10px rgb(255, 255, 255),
+        0 0 40px rgb(255, 0, 234)
+        ;}    
+
+    50%{ box-shadow:
+        0 0 5px yellow,
+        0 0 10px rgb(255, 255, 255),
+        0 0 40px yellow
+        ;}
+
+    75%{ box-shadow:
+        0 0 5px rgb(0, 255, 179),
+        0 0 10px rgb(255, 255, 255),
+        0 0 40px rgb(0, 255, 179)
+        ;}
+
+    100%{ box-shadow:
+        0 0 5px purple,
+        0 0 10px rgb(255, 255, 255),
+        0 0 40px rgb(255, 255, 255)
+        ;} 
+    }
+
+@keyframes glowYellow {
+
+    49%{ text-shadow: none;
+         color: $mYellow;
+    }
+
+    50% {
+        
+        text-shadow: 0 0 5px white,
+        0 0 10px white,
+        0 0 15px white,
+        0 0 20px $mYellow,
+        0 0 35px $mYellow,
+        0 0 40px $mYellow,
+        0 0 50px $mYellow;
+        color: white;
+    }
+
+    100% {
+        
+        text-shadow: 0 0 5px white,
+        0 0 10px white,
+        0 0 15px white,
+        0 0 20px $mYellow,
+        0 0 35px $mYellow,
+        0 0 40px $mYellow,
+        0 0 50px $mYellow;
+        color: white;
+    }
+}
+
+@keyframes glowBlue {
+
+    49%{ text-shadow: none;
+         color: $mBlue;
+    }
+
+    50% {
+        
+        text-shadow: 0 0 5px white,
+        0 0 10px white,
+        0 0 15px white,
+        0 0 20px $mBlue,
+        0 0 35px $mBlue,
+        0 0 40px $mBlue,
+        0 0 50px $mBlue;
+        color: white;
+    }
+    
+    100% {
+        
+        text-shadow: 0 0 5px white,
+        0 0 10px white,
+        0 0 15px white,
+        0 0 20px $mBlue,
+        0 0 35px $mBlue,
+        0 0 40px $mBlue,
+        0 0 50px $mBlue;
+        color: white;
+    }
+}
+
+@keyframes hypno {
+
+	from {
+		transform: scale(0.1)
+	}
+	to {
+		transform: scale(1);
+	}
 }

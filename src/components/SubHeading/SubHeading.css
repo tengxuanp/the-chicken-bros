@@ -1,4 +1,5 @@
-body {
-  background: black;
+.loading {
+  background-color: black;
+  z-index: -999;
 }
 /*# sourceMappingURL=SubHeading.css.map */

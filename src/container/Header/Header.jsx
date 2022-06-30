@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 
-import { SubHeading } from '../../components';
 import { images } from '../../constants';
 import './Header.css'
 
@@ -17,7 +16,7 @@ const Header = () => {
   }, []);
 
   return (
-    <div className='bg-home-pattern'>
+    <div name='home' className='bg-home-pattern'>
     <div className='app__header app__wrapper section__padding flex justify-center self-center '  id='home' 
     style={{transform: `translateY(-${offsetY * 1}px)` }}>
 
