@@ -17,7 +17,7 @@
     20% { content:'1617'};
     21% { content: '\003A \003A \003A \003A '; };
     22% { content:'1617'};
-    30% { content:'DEAD'};
+    30% { content:'DEA1'};
     31% { content:'1618' }
     50% { content: '\003A \003A \003A \003A '; };
     51% { content: '1618'; };
@@ -83,14 +83,12 @@
             cursor: pointer;
         }
       }
-      
-        
+
       img:hover {
         opacity: .5;
       }
       
       /* pop-up text */
-      
       .contact__prop span {
         color:#666;
         position:absolute;
@@ -111,8 +109,7 @@
         transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
       }
       
-      /* pop-up text arrow */
-      
+    /* pop-up text arrow */    
     .contact__prop span:before {
         content:'';
         width: 0; 
@@ -126,13 +123,10 @@
       }
       
       /* text pops up when icon is in hover state */
-      
       p:hover span {
         bottom:50px;
         visibility:visible;
         opacity:1;
       }
-      
-
-      }
+    }
       

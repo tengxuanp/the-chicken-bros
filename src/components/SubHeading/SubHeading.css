@@ -1,5 +1,3 @@
 .loading {
-  background-color: black;
-  z-index: -999;
-}
-/*# sourceMappingURL=SubHeading.css.map */
+  @apply bg-black z-[-999];
+}/*# sourceMappingURL=SubHeading.css.map */

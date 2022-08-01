@@ -1,9 +1,1 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,QAAQ,CAAA;EACJ,gBAAgB,EAAE,KAAK;EACvB,OAAO,EAAE,IAAI;CAChB",
-    "sources": [
-        "SubHeading.scss"
-    ],
-    "names": [],
-    "file": "SubHeading.css"
-}
+{"version":3,"sources":["SubHeading.scss","SubHeading.css"],"names":[],"mappings":"AAAA;EACI,wBAAA;ACCJ","file":"SubHeading.css"}

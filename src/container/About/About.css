@@ -4,40 +4,32 @@
   background-size: 20px 20px;
   background-image: repeating-linear-gradient(to right, #ece6cf, #ece6cf 1px, #FFFBEB 1px, #FFFBEB);
 }
-
 .about__wrapper .banner {
   background-image: url(../../assets/banner.svg);
   background-repeat: repeat-x;
 }
-
 .about__wrapper .marquee span + span {
   margin-left: 20rem;
 }
-
 .about__wrapper .about__title {
   white-space: nowrap;
   grid-area: i;
   color: white;
-  text-shadow: 0 0 5px red, 0 0 10px red, 0 0 20px red;
+  text-shadow: 0 0 5px red, 0 0 10px red, 0 0 20px red;
 }
-
 .about__wrapper .about__title span {
   -webkit-animation: flicker 5000ms infinite;
           animation: flicker 5000ms infinite;
 }
-
 .about__wrapper .about__title .delay {
   -webkit-animation-delay: 0.7s;
           animation-delay: 0.7s;
 }
-
 .about__wrapper .potrait {
-  -webkit-box-shadow: 0 0 5px red, 0 0 10px white, 0 0 20px red;
-          box-shadow: 0 0 5px red, 0 0 10px white, 0 0 20px red;
+  box-shadow: 0 0 5px red, 0 0 10px rgb(255, 255, 255), 0 0 20px red;
 }
-
 .about__wrapper .cite {
-  text-shadow: 0 0 5px red, 0 0 10px red, 0 0 20px red;
+  text-shadow: 0 0 5px red, 0 0 10px red, 0 0 20px red;
 }
 
 @-webkit-keyframes flicker {
@@ -98,5 +90,4 @@
   100% {
     opacity: 1;
   }
-}
-/*# sourceMappingURL=About.css.map */
+}/*# sourceMappingURL=About.css.map */

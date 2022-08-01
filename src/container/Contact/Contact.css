@@ -2,84 +2,81 @@
   font-family: "digi";
   src: url("../../assets/fonts/DS-DIGI.TTF");
 }
-
 .counter {
   font-family: digi;
   color: #F11A3E;
 }
-
 .counter:after {
-  content: '----';
+  content: "----";
   -webkit-animation: counterFlicker 10s infinite;
           animation: counterFlicker 10s infinite;
 }
 
 @-webkit-keyframes counterFlicker {
   20% {
-    content: '1617';
+    content: "1617";
   }
   21% {
-    content: '\003A \003A \003A \003A ';
+    content: "::::";
   }
   22% {
-    content: '1617';
+    content: "1617";
   }
   30% {
-    content: 'DEAD';
+    content: "DEA1";
   }
   31% {
-    content: '1618';
+    content: "1618";
   }
   50% {
-    content: '\003A \003A \003A \003A ';
+    content: "::::";
   }
   51% {
-    content: '1618';
+    content: "1618";
   }
   52% {
-    content: '\003A \003A \003A \003A ';
+    content: "::::";
   }
   54% {
-    content: '9999';
+    content: "9999";
   }
   55% {
-    content: '1619';
+    content: "1619";
   }
 }
 
 @keyframes counterFlicker {
   20% {
-    content: '1617';
+    content: "1617";
   }
   21% {
-    content: '\003A \003A \003A \003A ';
+    content: "::::";
   }
   22% {
-    content: '1617';
+    content: "1617";
   }
   30% {
-    content: 'DEAD';
+    content: "DEA1";
   }
   31% {
-    content: '1618';
+    content: "1618";
   }
   50% {
-    content: '\003A \003A \003A \003A ';
+    content: "::::";
   }
   51% {
-    content: '1618';
+    content: "1618";
   }
   52% {
-    content: '\003A \003A \003A \003A ';
+    content: "::::";
   }
   54% {
-    content: '9999';
+    content: "9999";
   }
   55% {
-    content: '1619';
+    content: "1619";
   }
 }
-
 .nugget__container {
   width: 100%;
   height: 50%;
@@ -125,35 +122,29 @@
 
 @-webkit-keyframes nugget {
   from {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
+    transform: translate(0, 0);
   }
   to {
-    -webkit-transform: translate(0vw, 70vh);
-            transform: translate(0vw, 70vh);
+    transform: translate(0vw, 70vh);
   }
 }
 
 @keyframes nugget {
   from {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
+    transform: translate(0, 0);
   }
   to {
-    -webkit-transform: translate(0vw, 70vh);
-            transform: translate(0vw, 70vh);
+    transform: translate(0vw, 70vh);
   }
 }
-
 .contact__card {
   /* Icons */
   /* pop-up text */
   /* pop-up text arrow */
   /* text pops up when icon is in hover state */
 }
-
 .contact__card .contact__prop {
-  background: #f7f7f7;
+  background: rgb(247, 247, 247);
   border-radius: 1rem;
   text-align: center;
   position: relative;
@@ -162,16 +153,13 @@
   height: 5rem;
   margin: 0 2px;
 }
-
 .contact__card .contact__prop:hover {
   background: #cacaca;
   cursor: pointer;
 }
-
 .contact__card img:hover {
-  opacity: .5;
+  opacity: 0.5;
 }
-
 .contact__card .contact__prop span {
   color: #666;
   position: absolute;
@@ -186,12 +174,10 @@
   background: #fff;
   visibility: hidden;
   opacity: 0;
-  -webkit-transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
-
 .contact__card .contact__prop span:before {
-  content: '';
+  content: "";
   width: 0;
   height: 0;
   border-left: 5px solid transparent;
@@ -201,10 +187,8 @@
   bottom: -5px;
   left: 40px;
 }
-
 .contact__card p:hover span {
   bottom: 50px;
   visibility: visible;
   opacity: 1;
-}
-/*# sourceMappingURL=Contact.css.map */
+}/*# sourceMappingURL=Contact.css.map */

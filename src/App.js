@@ -16,6 +16,8 @@ function App() {
       <Menu />
       <Faq />
       <Contact />
+
+      {/* Header About Menu */}
     </div>
   );
 }

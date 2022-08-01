@@ -36,10 +36,10 @@ useEffect(() => {
   return (
     <div className='loading bg-sub-pattern h-[75vh] w-full relative flex justify-center self-center bg-fixed'>
       <div className='narrate w-full flex justify-start self-start ml-[3rem]'>
-        <p className='text-2xl text-white font-bold' data-aos="fade-up">Are you really sober?</p>
+        <p className='text-2xl text-white font-bold' data-aos="fade-up">Hey you,</p>
       </div>
       <div className='absolute w-full flex justify-start self-start mt-[12rem] translate-y-[5rem]'>
-        <p className='text-3xl text-white font-bold' data-aos="fade-up" >Wanna try some fried chicken?</p>
+        <p className='text-3xl text-white font-bold' data-aos="fade-up" >Welcome to The Chicken Bros.</p>
       </div>
       <div className='h-[30rem] absolute top-0  z-[-5]' id='welcome-chicken' 
       style={{transform: `translateY(${offsetY * 0.2}px)` }}/>

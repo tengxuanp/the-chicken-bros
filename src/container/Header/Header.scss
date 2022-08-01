@@ -1,20 +1,9 @@
-// body{
-//     background-image:linear-gradient(to bottom, hsl(144, 100%, 74%), hsl(324, 67%, 64%));
-// }
 
 .app__header{
-
-    height: 100vh;
-
-    h1{
-        color: gold;
-        letter-spacing: 0.04em;
-        text-transform: uppercase;
-    }
+    @apply h-screen;
 
     .app__wrapper-img {
-        display: grid;
-        gap: 0;
+        @apply grid gap-0;
         grid-template-columns: repeat(8, 2fr);
         grid-auto-rows: minmax(100px, auto);
         grid-template-areas:
@@ -71,7 +60,6 @@
             
             span{
                 animation: flicker 5000ms infinite;
-                // animation-iteration-count: infinite;
             }
 
             .word1{
@@ -117,14 +105,6 @@
     15% {opacity: 1;}
     20% {opacity: 0;}
     25% {opacity: 1;}
-
-    // 5% {opacity: 1;}
-    // 10% {opacity: 0;}
-    // 20% {opacity: 1;}
-    // 25% {opacity: 0;}
-    // 30% {opacity: 1;}
-    // 40% {opacity: 0;}
-    // 50% {opacity: 1;}    
     100% {opacity: 1;}
 
 }
