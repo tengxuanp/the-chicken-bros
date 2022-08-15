@@ -10,6 +10,7 @@ import Hjump from '../assets/jump.png'
 import Nlogo from '../assets/logo-nav.png'
 import Abanner from '../assets/banner.svg'
 import Achef from '../assets/chef.jpg'
+import Mexternal from '../assets/external.png'
 import Mbg from '../assets/menuBg.jpg'
 import Mdrumstick1 from '../assets/drumstick1.png'
 import Mdrumstick2 from '../assets/drumstick2.png'
@@ -26,6 +27,7 @@ import Cpile from '../assets/nugget-pile.png'
 import Cportfolio from '../assets/portfolio.png'
 import Cgithub from '../assets/github.png'
 import Cemail from '../assets/email.png'
+import Mlogo from '../assets/logo-merch.png'
 
 export default {
     Nlogo,
@@ -47,6 +49,7 @@ export default {
     Mdrumstick2,
     Mmilktea1,
     Mchat,
+    Mexternal,
 
     Farrow,
     Fflood,
@@ -60,6 +63,8 @@ export default {
     Cportfolio,
     Cgithub,
     Cemail,
+
+    Mlogo,
 
     logo,
 };

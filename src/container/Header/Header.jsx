@@ -49,7 +49,7 @@ const Header = () => {
             <p>Di<span className='delay1'>n</span>e in: <span className='delay2 word1'></span>
             am to <span className='delay3 word2'>0</span>pm</p>
           </div>
-          <div className='logo absolute w-[35rem] self-center translate-y-[-3rem] z-[98] 
+          <div className='logo absolute w-[32rem] self-center translate-y-[-3rem] z-[98] 
                           md:w-[52rem] md:translate-x-[-1rem]'>
             <img src={images.logo} alt='The Chicken Bros Logo'  />
             <div className='absolute w-[20rem] translate-y-[-15rem] translate-x-[5rem] z-[-5]'>

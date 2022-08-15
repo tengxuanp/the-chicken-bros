@@ -3,22 +3,67 @@
   font-family: "monotype";
   src: url("../../assets/fonts/MTCORSVA.TTF");
 }
-
 .menu__bg {
-  background-color: #000000;
   opacity: 1;
-  background: linear-gradient(135deg, #f91e1e55 25%, transparent 25%) -10px 0/20px 20px, linear-gradient(225deg, #f91e1e 25%, transparent 25%) -10px 0/20px 20px, linear-gradient(315deg, #f91e1e55 25%, transparent 25%) 0px 0/20px 20px, linear-gradient(45deg, #f91e1e 25%, #000000 25%) 0px 0/20px 20px;
+  background: linear-gradient(135deg, rgba(249, 30, 30, 0.3333333333) 25%, transparent 25%) -10px 0/20px 20px, linear-gradient(225deg, #f91e1e 25%, transparent 25%) -10px 0/20px 20px, linear-gradient(315deg, rgba(249, 30, 30, 0.3333333333) 25%, transparent 25%) 0px 0/20px 20px, linear-gradient(45deg, #f91e1e 25%, #000000 25%) 0px 0/20px 20px;
 }
-
+.menu__bg .merch {
+  @apply text-white bg-black rotate-[-6deg];
+  -webkit-animation: merchNeon 2s infinite;
+          animation: merchNeon 2s infinite;
+  font-weight: bold;
+}
+@-webkit-keyframes merchNeon {
+  0% {
+    border: 4px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to top right, rgb(255, 87, 34) 0%, rgb(0, 159, 251) 100%);
+  }
+  25% {
+    border: 4px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to top right, rgb(63, 81, 181) 0%, rgb(103, 241, 110) 40%);
+  }
+  50% {
+    border: 4px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to top right, rgb(156, 204, 101) 0%, rgb(255, 225, 89) 50%);
+  }
+  100% {
+    border: 4px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to top right, rgb(252, 255, 72) 0%, rgb(255, 158, 30) 50%);
+  }
+}
+@keyframes merchNeon {
+  0% {
+    border: 4px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to top right, rgb(255, 87, 34) 0%, rgb(0, 159, 251) 100%);
+  }
+  25% {
+    border: 4px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to top right, rgb(63, 81, 181) 0%, rgb(103, 241, 110) 40%);
+  }
+  50% {
+    border: 4px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to top right, rgb(156, 204, 101) 0%, rgb(255, 225, 89) 50%);
+  }
+  100% {
+    border: 4px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to top right, rgb(252, 255, 72) 0%, rgb(255, 158, 30) 50%);
+  }
+}
 .menu__bg .tbc {
   font-family: monotype;
   color: #F11A3E;
 }
-
 .menu__bg .title {
-  text-shadow: 0 0 5px red, 0 0 10px red, 0 0 20px red;
+  text-shadow: 0 0 5px red, 0 0 10px red, 0 0 20px red;
 }
-
 .menu__bg .menu__table li {
   margin: 2rem 0;
   -webkit-animation: rainbow 5000ms infinite;
@@ -26,97 +71,79 @@
   background-color: white;
   cursor: pointer;
 }
-
 .menu__bg .menu__table li:after {
-  content: 'We currently do not have online ordering available. Please reach the counter for assistance.';
+  content: "We currently do not have online ordering available. Please reach the counter for assistance.";
   display: block;
   position: absolute;
-  background-color: #3d3d3d;
+  background-color: rgb(61, 61, 61);
   color: white;
   padding: 1em 3em;
   border-radius: 1rem;
-  font-size: .75em;
+  font-size: 0.75em;
   left: 0;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  -webkit-transition: bottom ease-out 150ms, -webkit-transform ease-out 150ms;
-  transition: bottom ease-out 150ms, -webkit-transform ease-out 150ms;
-  transition: transform ease-out 150ms, bottom ease-out 150ms;
-  transition: transform ease-out 150ms, bottom ease-out 150ms, -webkit-transform ease-out 150ms;
+  transform: scale(0);
+  transition: transform ease-out 150ms, bottom ease-out 150ms;
   z-index: 90;
 }
-
 .menu__bg .menu__table li:hover:after {
-  -webkit-transform: scale(1);
-          transform: scale(1);
+  transform: scale(1);
 }
-
 .menu__bg .menu__table li:hover {
   -webkit-animation: rainbowHover 500ms infinite;
           animation: rainbowHover 500ms infinite;
   bottom: 100%;
 }
-
 .menu__bg .menu__table .delay1 {
   -webkit-animation-delay: 0.8s;
           animation-delay: 0.8s;
 }
-
 .menu__bg .menu__table .delay2 {
   -webkit-animation-delay: 1.6s;
           animation-delay: 1.6s;
 }
-
 .menu__bg .menu__chickenProperty .prop1 {
-  font-family: 'Staatliches', cursive;
+  font-family: "Staatliches", cursive;
   color: #e6cc39;
   -webkit-animation: glowYellow 2000ms infinite;
           animation: glowYellow 2000ms infinite;
 }
-
 .menu__bg .menu__chickenProperty .prop2 {
-  font-family: 'Staatliches', cursive;
+  font-family: "Staatliches", cursive;
   color: #228DFF;
   -webkit-animation: glowBlue 2000ms infinite;
           animation: glowBlue 2000ms infinite;
   -webkit-animation-delay: 1.2s;
           animation-delay: 1.2s;
 }
-
 .menu__bg .menu__chickenProperty .prop__off {
-  font-family: 'Staatliches', cursive;
-  color: #3d3d3d;
-  opacity: .2;
+  font-family: "Staatliches", cursive;
+  color: rgb(61, 61, 61);
+  opacity: 0.2;
 }
-
 .menu__bg .hypnosis1 {
   -webkit-animation: hypno 2000ms infinite;
           animation: hypno 2000ms infinite;
 }
-
 .menu__bg .hypnosis2 {
   -webkit-animation: hypno 2000ms infinite;
           animation: hypno 2000ms infinite;
   -webkit-animation-delay: 0.5s;
           animation-delay: 0.5s;
 }
-
 .menu__bg .hypnosis3 {
   -webkit-animation: hypno 2000ms infinite;
           animation: hypno 2000ms infinite;
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
 }
-
 .menu__bg .hypnosis4 {
   -webkit-animation: hypno 2000ms infinite;
           animation: hypno 2000ms infinite;
   -webkit-animation-delay: 1.5s;
           animation-delay: 1.5s;
 }
-
 .menu__bg .chat:after {
-  content: 'This is an important message for customers who have \A recently purchased The Chicken Bros Boba Tea\002E \A Some customers have confused The Chicken Bros Boba Tea \A with Boba Tea\002E \A Please return this product to The Chicken Bros immediately\002E \A \A For your safety, this product will be carefully disposed of\002E \A \A Or for assistance please call\003A  011-10696958';
+  content: "This is an important message for customers who have \arecently purchased The Chicken Bros Boba Tea.\a" "Some customers have confused The Chicken Bros Boba Tea \awith Boba Tea.\a" "Please return this product to The Chicken Bros immediately.\a\a" "For your safety, this product will be carefully disposed of.\a\a" "Or for assistance please call: 011-10696958";
   display: block;
   white-space: pre;
   text-align: left;
@@ -125,101 +152,78 @@
   color: black;
   padding: 1em 3em 1em 2em;
   border-radius: 1rem;
-  font-size: .75em;
+  font-size: 0.75em;
 }
 
 @-webkit-keyframes rainbow {
   0% {
-    -webkit-box-shadow: 0 0 5px white, 0 0 10px white, 0 0 20px white;
-            box-shadow: 0 0 5px white, 0 0 10px white, 0 0 20px white;
+    box-shadow: 0 0 5px rgb(255, 255, 255), 0 0 10px rgb(255, 255, 255), 0 0 20px rgb(255, 255, 255);
   }
   25% {
-    -webkit-box-shadow: 0 0 5px red, 0 0 10px white, 0 0 20px #ff00ea;
-            box-shadow: 0 0 5px red, 0 0 10px white, 0 0 20px #ff00ea;
+    box-shadow: 0 0 5px red, 0 0 10px rgb(255, 255, 255), 0 0 20px rgb(255, 0, 234);
   }
   50% {
-    -webkit-box-shadow: 0 0 5px yellow, 0 0 10px white, 0 0 20px yellow;
-            box-shadow: 0 0 5px yellow, 0 0 10px white, 0 0 20px yellow;
+    box-shadow: 0 0 5px yellow, 0 0 10px rgb(255, 255, 255), 0 0 20px yellow;
   }
   75% {
-    -webkit-box-shadow: 0 0 5px #00ffb3, 0 0 10px white, 0 0 20px #00ffb3;
-            box-shadow: 0 0 5px #00ffb3, 0 0 10px white, 0 0 20px #00ffb3;
+    box-shadow: 0 0 5px rgb(0, 255, 179), 0 0 10px rgb(255, 255, 255), 0 0 20px rgb(0, 255, 179);
   }
   100% {
-    -webkit-box-shadow: 0 0 5px purple, 0 0 10px white, 0 0 20px white;
-            box-shadow: 0 0 5px purple, 0 0 10px white, 0 0 20px white;
+    box-shadow: 0 0 5px purple, 0 0 10px rgb(255, 255, 255), 0 0 20px rgb(255, 255, 255);
   }
 }
 
 @keyframes rainbow {
   0% {
-    -webkit-box-shadow: 0 0 5px white, 0 0 10px white, 0 0 20px white;
-            box-shadow: 0 0 5px white, 0 0 10px white, 0 0 20px white;
+    box-shadow: 0 0 5px rgb(255, 255, 255), 0 0 10px rgb(255, 255, 255), 0 0 20px rgb(255, 255, 255);
   }
   25% {
-    -webkit-box-shadow: 0 0 5px red, 0 0 10px white, 0 0 20px #ff00ea;
-            box-shadow: 0 0 5px red, 0 0 10px white, 0 0 20px #ff00ea;
+    box-shadow: 0 0 5px red, 0 0 10px rgb(255, 255, 255), 0 0 20px rgb(255, 0, 234);
   }
   50% {
-    -webkit-box-shadow: 0 0 5px yellow, 0 0 10px white, 0 0 20px yellow;
-            box-shadow: 0 0 5px yellow, 0 0 10px white, 0 0 20px yellow;
+    box-shadow: 0 0 5px yellow, 0 0 10px rgb(255, 255, 255), 0 0 20px yellow;
   }
   75% {
-    -webkit-box-shadow: 0 0 5px #00ffb3, 0 0 10px white, 0 0 20px #00ffb3;
-            box-shadow: 0 0 5px #00ffb3, 0 0 10px white, 0 0 20px #00ffb3;
+    box-shadow: 0 0 5px rgb(0, 255, 179), 0 0 10px rgb(255, 255, 255), 0 0 20px rgb(0, 255, 179);
   }
   100% {
-    -webkit-box-shadow: 0 0 5px purple, 0 0 10px white, 0 0 20px white;
-            box-shadow: 0 0 5px purple, 0 0 10px white, 0 0 20px white;
+    box-shadow: 0 0 5px purple, 0 0 10px rgb(255, 255, 255), 0 0 20px rgb(255, 255, 255);
   }
 }
-
 @-webkit-keyframes rainbowHover {
   0% {
-    -webkit-box-shadow: 0 0 5px white, 0 0 10px white, 0 0 40px white;
-            box-shadow: 0 0 5px white, 0 0 10px white, 0 0 40px white;
+    box-shadow: 0 0 5px rgb(255, 255, 255), 0 0 10px rgb(255, 255, 255), 0 0 40px rgb(255, 255, 255);
   }
   25% {
-    -webkit-box-shadow: 0 0 5px red, 0 0 10px white, 0 0 40px #ff00ea;
-            box-shadow: 0 0 5px red, 0 0 10px white, 0 0 40px #ff00ea;
+    box-shadow: 0 0 5px red, 0 0 10px rgb(255, 255, 255), 0 0 40px rgb(255, 0, 234);
   }
   50% {
-    -webkit-box-shadow: 0 0 5px yellow, 0 0 10px white, 0 0 40px yellow;
-            box-shadow: 0 0 5px yellow, 0 0 10px white, 0 0 40px yellow;
+    box-shadow: 0 0 5px yellow, 0 0 10px rgb(255, 255, 255), 0 0 40px yellow;
   }
   75% {
-    -webkit-box-shadow: 0 0 5px #00ffb3, 0 0 10px white, 0 0 40px #00ffb3;
-            box-shadow: 0 0 5px #00ffb3, 0 0 10px white, 0 0 40px #00ffb3;
+    box-shadow: 0 0 5px rgb(0, 255, 179), 0 0 10px rgb(255, 255, 255), 0 0 40px rgb(0, 255, 179);
   }
   100% {
-    -webkit-box-shadow: 0 0 5px purple, 0 0 10px white, 0 0 40px white;
-            box-shadow: 0 0 5px purple, 0 0 10px white, 0 0 40px white;
+    box-shadow: 0 0 5px purple, 0 0 10px rgb(255, 255, 255), 0 0 40px rgb(255, 255, 255);
   }
 }
-
 @keyframes rainbowHover {
   0% {
-    -webkit-box-shadow: 0 0 5px white, 0 0 10px white, 0 0 40px white;
-            box-shadow: 0 0 5px white, 0 0 10px white, 0 0 40px white;
+    box-shadow: 0 0 5px rgb(255, 255, 255), 0 0 10px rgb(255, 255, 255), 0 0 40px rgb(255, 255, 255);
   }
   25% {
-    -webkit-box-shadow: 0 0 5px red, 0 0 10px white, 0 0 40px #ff00ea;
-            box-shadow: 0 0 5px red, 0 0 10px white, 0 0 40px #ff00ea;
+    box-shadow: 0 0 5px red, 0 0 10px rgb(255, 255, 255), 0 0 40px rgb(255, 0, 234);
   }
   50% {
-    -webkit-box-shadow: 0 0 5px yellow, 0 0 10px white, 0 0 40px yellow;
-            box-shadow: 0 0 5px yellow, 0 0 10px white, 0 0 40px yellow;
+    box-shadow: 0 0 5px yellow, 0 0 10px rgb(255, 255, 255), 0 0 40px yellow;
   }
   75% {
-    -webkit-box-shadow: 0 0 5px #00ffb3, 0 0 10px white, 0 0 40px #00ffb3;
-            box-shadow: 0 0 5px #00ffb3, 0 0 10px white, 0 0 40px #00ffb3;
+    box-shadow: 0 0 5px rgb(0, 255, 179), 0 0 10px rgb(255, 255, 255), 0 0 40px rgb(0, 255, 179);
   }
   100% {
-    -webkit-box-shadow: 0 0 5px purple, 0 0 10px white, 0 0 40px white;
-            box-shadow: 0 0 5px purple, 0 0 10px white, 0 0 40px white;
+    box-shadow: 0 0 5px purple, 0 0 10px rgb(255, 255, 255), 0 0 40px rgb(255, 255, 255);
   }
 }
-
 @-webkit-keyframes glowYellow {
   49% {
     text-shadow: none;
@@ -234,7 +238,6 @@
     color: white;
   }
 }
-
 @keyframes glowYellow {
   49% {
     text-shadow: none;
@@ -249,7 +252,6 @@
     color: white;
   }
 }
-
 @-webkit-keyframes glowBlue {
   49% {
     text-shadow: none;
@@ -264,7 +266,6 @@
     color: white;
   }
 }
-
 @keyframes glowBlue {
   49% {
     text-shadow: none;
@@ -279,26 +280,19 @@
     color: white;
   }
 }
-
 @-webkit-keyframes hypno {
   from {
-    -webkit-transform: scale(0.1);
-            transform: scale(0.1);
+    transform: scale(0.1);
   }
   to {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
 }
-
 @keyframes hypno {
   from {
-    -webkit-transform: scale(0.1);
-            transform: scale(0.1);
+    transform: scale(0.1);
   }
   to {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
-}
-/*# sourceMappingURL=Menu.css.map */
+}/*# sourceMappingURL=Menu.css.map */

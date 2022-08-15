@@ -3,6 +3,7 @@ import { images } from '../../constants';
 import './Menu.css';
 import Aos from "aos"
 import "aos/dist/aos.css"
+import { Link } from 'react-router-dom';
 
 const Menu = () => {
 
@@ -15,8 +16,10 @@ useEffect(() => {
 
   return (
     <div name='menu' className='menu__bg h-auto p-10 z-[-50]'>
-      {/* <h1 className='text-6xl'>Menu</h1> */}
-
+      <button className='merch absolute left-5 p-2 text-4xl text-start translate-y-[-3rem]'>
+      <Link to='/products'>
+        Merchandise <img className='w-[1rem] float-right' src={images.Mexternal} alt='external link'  /></Link></button>
+      
     {/* Fried Chicken   */}
     <div className='menu__wrapper mb-[20rem]
     md:mb-[30rem]
@@ -43,7 +46,7 @@ useEffect(() => {
 
       <div className='hidden lg:grid'>
         <img className='drop-shadow-lg rotate-45 z-[2]' src={images.Mdrumstick1} alt='Drumstick 1' />
-        <div className=' hidden lg:grid absolute hypnoCircle scale-[1.8] ml-[4rem] z-[1]'>
+        <div className='hidden lg:grid absolute hypnoCircle scale-[1.8] ml-[4rem] z-[1]'>
             <div className='hypnosis1 w-[10rem] absolute h-auto rounded-full border-[5rem] border-green-400'></div>
             <div className='hypnosis2 w-[10rem] absolute h-auto rounded-full border-[5rem] border-black'></div>
             <div className='hypnosis3 w-[10rem] absolute h-auto rounded-full border-[5rem] border-green-400'></div>

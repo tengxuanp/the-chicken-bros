@@ -7,9 +7,43 @@ $mYellow:#e6cc39;
 $mBlue:#228DFF;
 $mGray:rgb(61, 61, 61);
 
+
 .menu__bg {
     opacity: 1;
     background: linear-gradient(135deg, #f91e1e55 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(225deg, #f91e1e 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(315deg, #f91e1e55 25%, transparent 25%) 0px 0/ 20px 20px, linear-gradient(45deg, #f91e1e 25%, #000000 25%) 0px 0/ 20px 20px;
+
+    .merch {
+        @apply text-white bg-black rotate-[-6deg];
+        animation: merchNeon 2s infinite;
+        font-weight: bold;
+
+    }
+
+    @keyframes merchNeon {
+    
+        0%{    
+            border:4px solid ;
+            border-image-slice: 1;
+            border-image-source:linear-gradient( to top right, rgba(255,87,34,1) 0%, rgb(0, 159, 251) 100%);
+        }
+        25%{
+            border:4px solid ;
+            border-image-slice: 1;
+            border-image-source:linear-gradient( to top right, rgba(63,81,181,1) 0%, rgb(103, 241, 110) 40%);
+        }
+        50%{
+            border:4px solid ;
+            border-image-slice: 1;
+            border-image-source:linear-gradient( to top right,rgba(156,204,101 ,1) 0%, rgb(255, 225, 89) 50%);
+        }
+
+        100%{
+            border:4px solid ;
+            border-image-slice: 1;
+            border-image-source:linear-gradient( to top right,rgb(252, 255, 72) 0%, rgb(255, 158, 30) 50%);
+        }
+    }
+    
 
     .tbc {
         font-family: monotype;
@@ -110,11 +144,11 @@ $mGray:rgb(61, 61, 61);
 
         &:after{
             content: 
-            'This is an important message for customers who have \A recently purchased The Chicken Bros Boba Tea\002E \A
-            Some customers have confused The Chicken Bros Boba Tea \A with Boba Tea\002E \A
-            Please return this product to The Chicken Bros immediately\002E \A \A
-            For your safety, this product will be carefully disposed of\002E \A \A
-            Or for assistance please call\003A  011-10696958';
+            'This is an important message for customers who have \A recently purchased The Chicken Bros Boba Tea\002E \A'
+            'Some customers have confused The Chicken Bros Boba Tea \A with Boba Tea\002E \A'
+            'Please return this product to The Chicken Bros immediately\002E \A \A'
+            'For your safety, this product will be carefully disposed of\002E \A \A'
+            'Or for assistance please call\003A  011-10696958';
             
             display: block;
             white-space: pre;
